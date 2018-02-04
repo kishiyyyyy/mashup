@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Api.create(
+  name: "雑談対話",
+  company: "NTT docomo",
+  url: "https://dev.smt.do_como.ne.jp/?p=docs.api.page&api_name=dialogue&p_name=api_usage_scenario#tag01"),
+  explain: "雑談対話APIは、ユーザの発話テキストを受け付け、その入力に対して自然な会話となる雑談を提供します。")
