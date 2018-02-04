@@ -98,5 +98,6 @@ docomo_39Geopla:
 
 docomo_ichijoho:
   name: 基地局を利用した位置情報提供機能
+  company: NTT docomo
   url: https://www.nttdocomo.co.jp/service/developer/smart_phone/base_station/location/
   explain: ドコモの基地局情報を利用することで、おおよその現在地を確認することができる機能です。
