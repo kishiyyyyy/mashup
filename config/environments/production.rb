@@ -91,4 +91,8 @@ Rails.application.configure do
 
   # GA tracking ID
   GA.tracker = "UA-xxxxx-x"
+
+  # log level
+  config.log_level = :error
+  
 end
