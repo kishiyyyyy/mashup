@@ -1,0 +1,11 @@
+<h1>MashUp#result</h1>
+  <% @apis.each do |api| %>
+    <div>
+      <h3>・<%= link_to api.name, api.url, target: "_blank" %> by <%= api.company %></h3>
+      <p><%= api.explain %></p>
+    </div>
+  <% end %>
+  <br>
+  <%= link_to "One More", "#" %>
+  <%= link_to "Return", { action: :index } %>
+</ul>
