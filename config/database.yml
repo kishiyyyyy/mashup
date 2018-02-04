@@ -52,6 +52,10 @@ test:
 #
 production:
   <<: *default
-  database: mashup_production
-  username: <%= ENV["RAILS_DATABASE_USERNAME_PROD"] %>
-  password: <%= ENV["RAILS_DATABASE_PASSWORD_PROD"] %>
+  adapter: mysql2
+  encoding: utf8
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
