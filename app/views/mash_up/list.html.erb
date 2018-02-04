@@ -1,0 +1,17 @@
+<h1>MashUp#list</h1>
+<br>
+<%= link_to "Return", { action: :index } %>
+<br><br>
+<table>
+  <tr>
+    <th>No.</th><th>API名</th><th>提供者</th><th>説明</th>
+  </tr>
+  <% @apis.each do |api| %>
+    <tr>
+      <td><%= api.id %></td>
+      <td><%= link_to api.name, api.url, target: "_blank" %></td>
+      <td><%= api.company %></td>
+      <td><%= api.explain %></td>
+    </tr>
+  <% end %>
+</table>
